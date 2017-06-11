@@ -1,8 +1,6 @@
-package com.cainiao.chushi.util;
+package com.cainiao.chushi.conflictb;
 
 import org.junit.Assert;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by dengrong on 2017/6/2.
@@ -10,7 +8,7 @@ import static org.junit.Assert.*;
 public class LogUtilTest {
     @org.junit.Test
     public void log() throws Exception {
-        LogUtil.log("name");
+//        LogUtil.log("name");
         Assert.assertEquals(1,1);
     }
 

@@ -1,17 +1,16 @@
-package com.cainiao.chushi.util;
+package com.cainiao.chushi.conflictb;
 
-import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sun.rmi.runtime.Log;
 
 /**
- * Created by dengrong on 2017/6/2.
+ * Created by dengrong on 2017/6/4.
  */
-public class LogUtil {
-    static private Logger logger = LoggerFactory.getLogger(Log.class);
+public class LogUtil2 {
+    private Logger logger = LoggerFactory.getLogger(Log.class);
 
-    public static void log(String name){
+    public void log(String name){
         // 记录error信息
         logger.error("[info message]");
         // 记录info，还可以传入参数

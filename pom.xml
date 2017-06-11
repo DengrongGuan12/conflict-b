@@ -26,6 +26,11 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.24</version>
         </dependency>
+        <dependency>
+            <groupId>com.cainiao.chushi</groupId>
+            <artifactId>conflict-sdk</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
     <build>
@@ -34,6 +39,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.3.RELEASE</version>
+                <configuration>
+                    <mainClass>com.cainiao.chushi.conflictb.LogUtil</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -44,6 +52,32 @@
             </plugin>
         </plugins>
     </build>
+    <!-- 打包配置 -->
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                <!--<version>2.5.3</version>-->
+                <!--<configuration>-->
+                    <!--<descriptors>-->
+                        <!--<descriptor>src/main/assembly/assembly.xml</descriptor>-->
+                    <!--</descriptors>-->
+                    <!--<appendAssemblyId>false</appendAssemblyId>-->
+                    <!--<finalName>${project.artifactId}-${project.version}</finalName>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>make-assembly</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
 
 
 </project>
