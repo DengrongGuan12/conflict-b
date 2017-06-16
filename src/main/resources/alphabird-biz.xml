@@ -3,4 +3,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
        default-autowire="byName">
     <bean id="conflictb.LogUtil" class="com.cainiao.chushi.conflictb.LogUtil" init-method="init"/>
+    <bean id="conflictb.LogUtil" class="com.cainiao.chushi.conflictb.LogUtil2"/>
+
 </beans>

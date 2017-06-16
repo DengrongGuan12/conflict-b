@@ -7,9 +7,13 @@
     <groupId>com.cainiao.chushi</groupId>
     <artifactId>conflict-b</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>com.cainiao.chushi</groupId>
+            <artifactId>conflict-sdk</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -26,13 +30,8 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.24</version>
         </dependency>
-        <dependency>
-            <groupId>com.cainiao.chushi</groupId>
-            <artifactId>conflict-sdk</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
